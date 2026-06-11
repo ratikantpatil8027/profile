@@ -428,52 +428,7 @@
 
   <div class="project-grid">
 
-    <!-- PROJECT 1: Automatic Payments Scheduler -->
-    <div class="project-card">
-      <div class="project-card-inner">
-        <div class="project-top">
-          <div class="project-name">Automatic Payments Scheduler</div>
-          <div class="project-company">Zeta · PayZapp · 2022–24</div>
-        </div>
-        <div class="project-subtitle">Mandate Registration, Scheduler Design &amp; Auto Debit Orchestration</div>
-        <p class="project-desc">
-          Product needed a reliable automatic payments stack to grow monthly transacting users. The existing OpenWhisk scheduler had no retries, no observability, and frequent thread shutdowns — no mandate registration or auto debit stack existed. Built a full three-pillar system: extensible mandate registration APIs backed by webhook state machines, a high-throughput Cassandra scheduler handling 50k schedules per 5-min window with resilience and retry, and auto debit orchestration integrated with Zeta Payments provider APIs.
-        </p>
-        <div class="project-details">
-          <div class="detail-block">
-            <label>My Role</label>
-            <p>Full-stack owner — design, build, testing, decisions &amp; user reviews</p>
-          </div>
-          <div class="detail-block">
-            <label>Cross-functional</label>
-            <p>Zeta Payments Provider Team, Product / Business, PayZapp Wallet Merchants, QA / Integration Teams</p>
-          </div>
-        </div>
-        <div class="project-impact">
-          <strong>Impact:</strong> 10k first autopay users · 50k schedules / 5-min window in prod · Scheduler adopted org-wide · Extensible mandate stack for all PayZapp merchants
-        </div>
-        <div class="project-stack">
-          <span class="pill">Java / Spring Boot</span>
-          <span class="pill">Cassandra</span>
-          <span class="pill">Java Executors</span>
-          <span class="pill">Webhook Events</span>
-          <span class="pill">NACH / UPI APIs</span>
-          <span class="pill">Kafka</span>
-          <span class="pill">Zeta Payments SDK</span>
-        </div>
-      </div>
-      <div class="arch">
-        <span class="arch-node">Mandate Registration APIs</span>
-        <span class="arch-arrow">→</span>
-        <span class="arch-node highlight">Cassandra Scheduler</span>
-        <span class="arch-arrow">→</span>
-        <span class="arch-node">Auto Debit Orchestration</span>
-        <span class="arch-arrow">→</span>
-        <span class="arch-node">Zeta Payments Integration</span>
-      </div>
-    </div>
-
-    <!-- PROJECT 2: Bill Payments Recon & Settlement -->
+    <!-- PROJECT 1: Bill Payments Recon & Settlement -->
     <div class="project-card">
       <div class="project-card-inner">
         <div class="project-top">
